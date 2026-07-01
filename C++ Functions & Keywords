@@ -1,8 +1,0 @@
-Function / Keyword	Description	Usage
-main()	Entry point of every C++ program.	Where program execution begins.
-cout	Displays output on the console.	cout << "Hello";
-cin	Accepts input from the user.	cin >> number;
-endl	Moves the cursor to the next line.	cout << endl;
-return	Exits a function and optionally returns a value.	return 0;
-#include <iostream>	Includes the input/output library.	Required for cin and cout.
-using namespace std;	Allows the use of standard library names without std::.	using namespace std;
