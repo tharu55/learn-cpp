@@ -5,8 +5,13 @@ C++ is a general-purpose programming language created by Bjarne Stroustrup in 19
 C++ is widely used to develop:
 
 💻 Desktop applications
+
 🎮 Game engines and games
+
 🖥️ Operating systems
+
 🌐 Web browsers
+
 🚗 Embedded systems
+
 🤖 High-performance software
