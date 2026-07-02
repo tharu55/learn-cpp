@@ -95,3 +95,169 @@ Every C++ program must contain a `main()` function because it is the starting po
 | `<fstream>` | File handling |
 
 > **Note:** As I continue learning C++, I will update this section with new functions, keywords, libraries, and concepts.
+
+# 💻 Example Programs
+
+---
+
+## 1. Hello World Program
+
+### Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!";
+    return 0;
+}
+```
+
+### Output
+
+```
+Hello, World!
+```
+
+### Explanation
+
+- `#include <iostream>` includes the input/output library.
+- `using namespace std;` allows us to use `cout` without `std::`.
+- `main()` is the starting point of the program.
+- `cout` displays text on the screen.
+- `return 0;` ends the program successfully.
+
+---
+
+## 2. Input and Output Program
+
+### Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    string name;
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Hello, " << name;
+
+    return 0;
+}
+```
+
+### Sample Output
+
+```
+Enter your name: Tharun
+Hello, Tharun
+```
+
+### Concepts Used
+
+- `cin`
+- `cout`
+- `string`
+- `main()`
+- `return`
+
+---
+
+## 3. Program Using Different Data Types
+
+### Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+    float height = 5.8;
+    char grade = 'A';
+    bool passed = true;
+
+    cout << "Age: " << age << endl;
+    cout << "Height: " << height << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Passed: " << passed << endl;
+
+    return 0;
+}
+```
+
+### Output
+
+```
+Age: 20
+Height: 5.8
+Grade: A
+Passed: 1
+```
+
+### Concepts Used
+
+- Data Types
+- Variables
+- `cout`
+- `endl`
+
+---
+
+## 4. Arithmetic Operators
+
+### Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 5;
+
+    cout << "Addition: " << a + b << endl;
+    cout << "Subtraction: " << a - b << endl;
+    cout << "Multiplication: " << a * b << endl;
+    cout << "Division: " << a / b << endl;
+    cout << "Remainder: " << a % b << endl;
+
+    return 0;
+}
+```
+
+### Output
+
+```
+Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2
+Remainder: 0
+```
+
+---
+
+## 5. Simple Function Example (`main()`)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Welcome to C++!";
+    return 0;
+}
+```
+
+### Output
+```
+Welcome to C++!
+```
+
+---
+
