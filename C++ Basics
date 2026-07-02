@@ -1,0 +1,97 @@
+# 📘 C++ Basics
+
+Before writing C++ programs, it is important to understand the basic building blocks of the language. These include **functions, keywords, data types, operators,** and **header files**. Together, they help us write efficient and organized programs.
+
+---
+
+# 📖 What is a Function?
+
+A **function** is a block of code that performs a specific task. Functions help organize a program into smaller, reusable parts, making the code easier to write, understand, test, and maintain.
+
+Every C++ program must contain a `main()` function because it is the starting point of program execution.
+
+### Why Do We Use Functions?
+
+- Reuse code without writing it multiple times.
+- Improve code readability.
+- Make programs easier to debug and maintain.
+- Break large problems into smaller tasks.
+- Improve program organization.
+
+---
+
+# 📖 What are Keywords?
+
+**Keywords** are reserved words in C++ that have predefined meanings. They are part of the language syntax and cannot be used as variable or function names.
+
+**Examples:** `int`, `return`, `if`, `else`, `while`, `for`, `class`
+
+---
+
+## Common C++ Functions & Keywords
+
+| Function / Keyword | Description | Example / Usage |
+|--------------------|-------------|-----------------|
+| `main()` | Entry point of every C++ program. | Program execution begins here. |
+| `cout` | Displays output on the console. | `cout << "Hello";` |
+| `cin` | Accepts input from the user. | `cin >> number;` |
+| `endl` | Moves the cursor to the next line. | `cout << endl;` |
+| `return` | Exits a function and optionally returns a value. | `return 0;` |
+| `#include <iostream>` | Includes the input/output library. | Required for `cin` and `cout`. |
+| `using namespace std;` | Allows the use of standard library names without `std::`. | `using namespace std;` |
+
+---
+
+# 📖 What are Data Types?
+
+**Data types** define the type of data a variable can store. Choosing the correct data type helps the compiler allocate memory efficiently and perform operations correctly.
+
+## Common Data Types
+
+| Data Type | Description | Example |
+|-----------|-------------|---------|
+| `int` | Stores whole numbers. | `int age = 20;` |
+| `float` | Stores decimal numbers. | `float pi = 3.14;` |
+| `double` | Stores larger decimal values with higher precision. | `double salary = 50000.75;` |
+| `char` | Stores a single character. | `char grade = 'A';` |
+| `string` | Stores text. | `string name = "Tharun";` |
+| `bool` | Stores `true` or `false`. | `bool isPassed = true;` |
+
+---
+
+# 📖 What are Operators?
+
+**Operators** are symbols that perform operations on variables and values, such as arithmetic calculations, comparisons, and assignments.
+
+## Common Operators
+
+| Operator | Purpose | Example |
+|----------|---------|---------|
+| `+` | Addition | `a + b` |
+| `-` | Subtraction | `a - b` |
+| `*` | Multiplication | `a * b` |
+| `/` | Division | `a / b` |
+| `%` | Modulus (Remainder) | `a % b` |
+| `=` | Assignment | `x = 10;` |
+| `==` | Equal to | `a == b` |
+| `!=` | Not equal to | `a != b` |
+| `>` | Greater than | `a > b` |
+| `<` | Less than | `a < b` |
+
+---
+
+# 📖 What are Header Files?
+
+**Header files** contain declarations of predefined functions, classes, and libraries. They allow us to use built-in features in our C++ programs by including them with the `#include` directive.
+
+## Common Header Files
+
+| Header File | Purpose |
+|-------------|---------|
+| `<iostream>` | Input and output operations |
+| `<string>` | String manipulation |
+| `<cmath>` | Mathematical functions |
+| `<iomanip>` | Output formatting |
+| `<fstream>` | File handling |
+
+> **Note:** As I continue learning C++, I will update this section with new functions, keywords, libraries, and concepts.
