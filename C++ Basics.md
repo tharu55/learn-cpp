@@ -1,6 +1,225 @@
 # 📘 C++ Basics
 
-Before writing C++ programs, it is important to understand the basic building blocks of the language. These include **functions, keywords, data types, operators,** and **header files**. Together, they help us write efficient and organized programs.
+Before writing C++ programs, it is important to understand the basic building blocks of the language. These include variables, functions, keywords, data types, operators, type casting, and header files. Understanding these concepts provides a strong foundation for writing efficient, organized, and maintainable C++ programs.
+---
+# 📘 Variables & Type Casting in C++
+
+Variables and type casting are two fundamental concepts in C++. Variables are used to store data, while type casting is used to convert one data type into another.
+
+---
+
+# 📖 What is a Variable?
+
+A **variable** is a named memory location used to store data. The value stored in a variable can change while the program is running.
+
+Think of a variable as a **container** that holds information such as numbers, characters, or text.
+
+### Syntax
+
+```cpp
+data_type variable_name = value;
+```
+
+### Example
+
+```cpp
+int age = 20;
+float height = 5.8;
+char grade = 'A';
+string name = "Tharun";
+```
+
+---
+
+# 🎯 Why Do We Use Variables?
+
+- Store data in memory.
+- Perform calculations.
+- Accept input from the user.
+- Reuse values throughout the program.
+- Make programs more flexible and readable.
+
+---
+
+# 📋 Rules for Naming Variables
+
+- Variable names can contain letters, digits, and underscores (`_`).
+- Variable names must begin with a letter or an underscore.
+- Variable names cannot contain spaces.
+- Variable names cannot be C++ keywords.
+- Variable names are case-sensitive.
+
+### Valid Variable Names
+
+```cpp
+age
+studentName
+_marks
+total123
+```
+
+### Invalid Variable Names
+
+```cpp
+2age        // Starts with a number
+student name // Contains space
+float       // Keyword
+```
+
+---
+
+# 💻 Example Program: Variables
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+    float height = 5.8;
+    char grade = 'A';
+    string name = "Tharun";
+
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Height: " << height << endl;
+    cout << "Grade: " << grade << endl;
+
+    return 0;
+}
+```
+
+### Output
+
+```text
+Name: Tharun
+Age: 20
+Height: 5.8
+Grade: A
+```
+
+---
+
+# 📖 What is Type Casting?
+
+**Type casting** is the process of converting a value from one data type to another.
+
+For example, converting an `int` to a `float` or a `double` to an `int`.
+
+---
+
+# 🎯 Why Do We Use Type Casting?
+
+- Convert one data type into another.
+- Prevent data type mismatch.
+- Perform accurate calculations.
+- Control the output of expressions.
+- Improve program flexibility.
+
+---
+
+# 📚 Types of Type Casting
+
+## 1. Implicit Type Casting (Automatic Conversion)
+
+The compiler automatically converts a smaller data type into a larger data type.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number = 10;
+    double value = number;
+
+    cout << value;
+
+    return 0;
+}
+```
+
+### Output
+
+```text
+10
+```
+
+---
+
+## 2. Explicit Type Casting (Manual Conversion)
+
+The programmer converts one data type into another.
+
+### Syntax
+
+```cpp
+(data_type) value
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    double price = 99.99;
+    int newPrice = (int) price;
+
+    cout << newPrice;
+
+    return 0;
+}
+```
+
+### Output
+
+```text
+99
+```
+
+---
+
+# 💻 Example Program: Type Casting
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    int b = 3;
+
+    float result = (float)a / b;
+
+    cout << "Result = " << result;
+
+    return 0;
+}
+```
+
+### Output
+
+```text
+Result = 3.33333
+```
+
+Without type casting:
+
+```cpp
+int result = a / b;
+```
+
+Output
+
+```text
+3
+```
+
+Because integer division removes the decimal part.
 
 ---
 
