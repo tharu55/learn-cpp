@@ -386,5 +386,507 @@ for(int i = 1; i <= 5; i++)
 ```
 
 ---
+## Important Idea About Loops
 
+A loop is useful when:
+
+* you want to repeat a task,
+* you want to print numbers,
+* you want to work with arrays,
+* you want to run code until a condition changes.
+
+### Real-Life Examples
+
+* Printing attendance numbers from 1 to 50.
+* Showing menu options again and again.
+* Counting steps in a game.
+* Reading many values from the user.
+
+---
+
+## Parts of a Loop
+
+Most loops have three main parts:
+
+1. **Initialization**
+   This gives the starting value.
+
+2. **Condition**
+   This checks whether the loop should continue.
+
+3. **Update**
+   This changes the value after each repetition.
+
+### Example
+
+```cpp
+for(int i = 1; i <= 5; i++)
+{
+    cout << i << " ";
+}
+```
+
+### Explanation
+
+* `int i = 1` → initialization
+* `i <= 5` → condition
+* `i++` → update
+
+---
+
+## How a Loop Works
+
+A loop works step by step:
+
+1. The starting value is set.
+2. The condition is checked.
+3. If the condition is true, the code inside the loop runs.
+4. The update part changes the value.
+5. The condition is checked again.
+6. This continues until the condition becomes false.
+
+---
+
+## Types of Loops
+
+1. `while`
+2. `do-while`
+3. `for`
+
+---
+
+# 1. while Loop
+
+## Definition
+
+A **while loop** checks the condition first.
+
+If the condition is true, the loop runs.
+
+If the condition is false, the loop stops.
+
+### Syntax
+
+```cpp
+while(condition)
+{
+    // code
+}
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while(i <= 5)
+    {
+        cout << i << " ";
+        i++;
+    }
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 2 3 4 5
+```
+
+### Explanation
+
+* `i` starts from 1.
+* The condition `i <= 5` is checked.
+* If true, the number is printed.
+* `i++` increases the value by 1.
+* The loop repeats until `i` becomes 6.
+
+### When to use while Loop?
+
+Use `while` when:
+
+* you do not know the exact number of repetitions,
+* the loop should continue until a condition becomes false,
+* the condition must be checked before running the code.
+
+### Example Use Case
+
+Keep asking the user for input until they enter the correct password.
+
+---
+
+# 2. do-while Loop
+
+## Definition
+
+A **do-while loop** executes the code **at least one time**, even if the condition is false.
+
+This is because the condition is checked **after** the code runs.
+
+### Syntax
+
+```cpp
+do
+{
+    // code
+}
+while(condition);
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do
+    {
+        cout << i << " ";
+        i++;
+    }
+    while(i <= 5);
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 2 3 4 5
+```
+
+### Explanation
+
+* First, the code inside `do` runs.
+* Then the condition `i <= 5` is checked.
+* If the condition is true, the loop repeats.
+* If the condition is false, the loop stops.
+
+### Special Point
+
+Even if the condition is false at the beginning, the `do-while` loop runs one time.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 10;
+
+    do
+    {
+        cout << i << " ";
+        i++;
+    }
+    while(i <= 5);
+
+    return 0;
+}
+```
+
+### Output
+
+```
+10
+```
+
+### When to use do-while Loop?
+
+Use `do-while` when:
+
+* the code must run at least once,
+* you want to show a menu at least one time,
+* you want to take input first and check later.
+
+---
+
+# 3. for Loop
+
+## Definition
+
+A **for loop** is used when we already know how many times the loop should run.
+
+It is very useful for counting and repeating a task a fixed number of times.
+
+### Syntax
+
+```cpp
+for(initialization; condition; update)
+{
+    // code
+}
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << i << " ";
+    }
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 2 3 4 5
+```
+
+### Explanation
+
+* `int i = 1` starts the loop.
+* `i <= 5` checks the condition.
+* `i++` increases the value after each round.
+
+### When to use for Loop?
+
+Use `for` when:
+
+* the number of repetitions is known,
+* you want to print a series of numbers,
+* you want to work with arrays,
+* you want a compact loop structure.
+
+### Example Use Case
+
+Printing numbers from 1 to 100.
+
+---
+
+# Difference Between while and do-while
+
+| while Loop                                                         | do-while Loop                              |
+| ------------------------------------------------------------------ | ------------------------------------------ |
+| Checks the condition first.                                        | Executes the code first.                   |
+| May execute zero times.                                            | Executes at least one time.                |
+| Used when the condition should be checked before running the code. | Used when the code must run at least once. |
+
+---
+
+# Difference Between for and while
+
+| for Loop                                                       | while Loop                                                                        |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Best when the number of repetitions is known.                  | Best when the number of repetitions is not known.                                 |
+| Initialization, condition, and update are written in one line. | Initialization is written before the loop, and update is written inside the loop. |
+| More compact and easy for counting.                            | More flexible for condition-based repetition.                                     |
+
+---
+
+# Loop Control Statements
+
+Sometimes we want to change the normal flow of a loop. For this, we use loop control statements.
+
+## 1. break
+
+The `break` statement stops the loop immediately.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 5; i++)
+    {
+        if(i == 3)
+        {
+            break;
+        }
+        cout << i << " ";
+    }
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 2
+```
+
+### Explanation
+
+* When `i` becomes 3, the loop stops.
+* The remaining values are not printed.
+
+---
+
+## 2. continue
+
+The `continue` statement skips the current iteration and moves to the next one.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 5; i++)
+    {
+        if(i == 3)
+        {
+            continue;
+        }
+        cout << i << " ";
+    }
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 2 4 5
+```
+
+### Explanation
+
+* When `i` becomes 3, that value is skipped.
+* The loop continues with the next number.
+
+---
+
+# Infinite Loop
+
+## Definition
+
+An **infinite loop** is a loop that never stops because its condition always remains true.
+
+### Example
+
+```cpp
+while(true)
+{
+    cout << "Hello";
+}
+```
+
+### Why is it dangerous?
+
+* It keeps running forever.
+* It can make the program hang.
+* It uses system resources continuously.
+
+### Common Cause
+
+* Forgetting to update the loop variable.
+* Writing a condition that never becomes false.
+
+---
+
+# Nested Loop
+
+## Definition
+
+A **nested loop** means one loop inside another loop.
+
+It is often used for patterns, tables, and grids.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 3; i++)
+    {
+        for(int j = 1; j <= 2; j++)
+        {
+            cout << i << " " << j << endl;
+        }
+    }
+
+    return 0;
+}
+```
+
+### Output
+
+```
+1 1
+1 2
+2 1
+2 2
+3 1
+3 2
+```
+
+### Use of Nested Loops
+
+* Printing patterns
+* Working with rows and columns
+* Printing multiplication tables
+
+---
+
+# Common Mistakes in Loops
+
+1. **Forgetting to update the variable**
+
+   * This can create an infinite loop.
+
+2. **Writing the wrong condition**
+
+   * The loop may stop too early or never stop.
+
+3. **Using ****`=`**** instead of ****`==`**
+
+   * `=` is for assignment.
+   * `==` is for comparison.
+
+4. **Wrong placement of semicolon**
+
+   * A small mistake can change the loop behavior.
+
+---
+
+# Key Points to Remember
+
+* `if` checks one condition.
+* `if-else` chooses between two options.
+* `else if` checks multiple conditions.
+* `Nested if` places one `if` inside another.
+* `switch` is useful for fixed choices.
+* The ternary operator is a short form of `if-else`.
+* A loop repeats code.
+* `while` checks the condition before each iteration.
+* `do-while` runs the code once before checking the condition.
+* `for` is best when the number of repetitions is known.
+* A loop usually has initialization, condition, and update.
+* `break` stops a loop.
+* `continue` skips one iteration.
+* An infinite loop never ends.
+* Nested loops are useful for patterns and tables.
  
