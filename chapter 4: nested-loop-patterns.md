@@ -40,15 +40,21 @@ for(int i = 0; i < rows; i++) {
 Program: 
 
 ```cpp
-int n = 3;
-int num = 1;
+#include <iostream>
+using namespace std;
+int main() {
+    int n=3;
+    int num=1;
+    for(int i=0; i<n; i++){ //this line conrols rows
+        for(int j=0; j<n; j++){ // this line conrols columns
+            cout << num; 
+            num++;
+    
+        }
+        cout << endl;
 
-for(int i=0; i<n; i++){
-    for(int j=0; j<n; j++){
-        cout << num;
-        num++;
     }
-    cout << endl;
+    return 0;
 }
 ```
 
@@ -138,13 +144,19 @@ Row 3
 Program: 
 
 ```cpp
-int n = 4;
+#include <iostream>
+using namespace std;
+int main() {
+    int n=4;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout << "*";
+    
+        }
+        cout << endl;
 
-for(int i=0; i<n; i++){
-    for(int j=0; j<n; j++){
-        cout << "*";
     }
-    cout << endl;
+    return 0;
 }
 ```
 
@@ -179,11 +191,20 @@ Inner loop prints **4 stars** in every row.
 Program: 
 
 ```cpp
-for(int i=0; i<n; i++){
-    for(int j=0; j<i+1; j++){
-        cout << i+1;
+#include <iostream>
+using namespace std;
+int main() {
+    int n=4;
+    
+    for(int i=0; i<n; i++){
+        for(int j=0; j<i+1; j++){
+            cout << i+1;
+            
+        }
+        cout << endl;
+
     }
-    cout << endl;
+    return 0;
 }
 ```
 
@@ -227,7 +248,21 @@ This controls how many numbers are printed.
 Program: 
 
 ```cpp
-cout << char('A'+i);
+#include <iostream>
+using namespace std;
+int main() {
+    int n=4;
+    
+    for(int i=0; i<n; i++){
+        for(int j=0; j<i+1; j++){
+            cout << char('A'+i);
+            
+        }
+        cout << endl;
+
+    }
+    return 0;
+}
 ```
 
 ## Output
@@ -274,8 +309,18 @@ i = 2
 Program: 
 
 ```cpp
-for(int j=i+1; j>0; j--){
-    cout << j;
+#include <iostream> // revers order
+using namespace std;
+int main (){
+    int n=4;
+    for (int i=0; i<n; i++){
+for (int j=i+1; j>0;j--){
+    cout <<j;
+}
+cout <<endl;
+    }
+    return 0;
+   
 }
 ```
 
@@ -335,13 +380,20 @@ Each row counts backwards to 1.
 Program: 
 
 ```cpp
-int num = 1;
+#include <iostream>
+using namespace std;
+int main (){
+    int n=4;
+    int num=1;
+    for (int i=0; i<n; i++){
+        for (int j=0; j<i+1;j++){
+            cout << num;
+            num++;
+        }
+        cout <<endl;
 
-for(int i=0;i<n;i++){
-    for(int j=0;j<i+1;j++){
-        cout<<num;
-        num++;
     }
+    return 0;
 }
 ```
 
@@ -380,11 +432,22 @@ It continues increasing.
 Program: 
 
 ```cpp
-for(int j=0;j<i;j++)
-    cout<<" ";
-
-for(int j=0;j<n-i;j++)
-    cout<<i+1;
+#include <iostream>
+using namespace std;
+int main (){
+    int n=4;
+for (int i=0; i<n;i++){
+    for(int j=0; j<i; j++){
+        cout <<  " ";
+    }
+        for(int j=0; j<n-i; j++){
+        cout << i+1 ;
+        }
+    cout << endl;
+    
+}
+return 0;
+}
 ```
 
 ## Output
@@ -401,6 +464,7 @@ for(int j=0;j<n-i;j++)
 ### First Loop
 
 ```cpp
+
 for(int j=0;j<i;j++)
 ```
 
