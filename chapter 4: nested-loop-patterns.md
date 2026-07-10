@@ -6,7 +6,10 @@ Absolutely! These are **nested loop pattern programs**, and once you understand 
 
 ## What is a Nested Loop?
 
-A **nested loop** means **one loop inside another loop**.
+
+A nested loop is a loop inside another loop. It is mainly used to print patterns, work with rows and columns, and solve problems involving 2D arrays.
+
+The outer loop controls how many rows will be printed, while the inner loop controls how many times something is printed in each row.
 
 * **Outer loop (`i`)** → Controls the **rows**.
 * **Inner loop (`j`)** → Controls what is printed in each **column**.
