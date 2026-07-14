@@ -141,3 +141,107 @@ for(int i = 0; i < 5; i++)
 }
 ```
 
+Output
+
+```
+85 90 78 88 95
+```
+
+The loop prints every value in the array.
+
+---
+
+# Taking Input into an Array
+
+We can also store values entered by the user.
+
+```cpp
+for(int i = 0; i < 5; i++)
+{
+    cin >> marks[i];
+}
+```
+
+This loop stores five values in the array.
+
+---
+
+# Finding the Sum of Array Elements
+
+We use a loop to add all the values in an array.
+
+```cpp
+sum = sum + marks[i];
+```
+
+After the loop ends, the variable `sum` contains the total of all elements.
+
+---
+
+# Finding the Largest Element
+
+Start by assuming the first value is the largest.
+
+Then compare it with the remaining values.
+
+If a larger value is found, update the largest value.
+
+After checking all the elements, we get the largest number in the array.
+
+---
+
+# Finding the Smallest Element
+
+The logic is the same as finding the largest element.
+
+Start with the first value and replace it whenever a smaller value is found.
+
+---
+
+# Types of Arrays
+
+### One-Dimensional (1D) Array
+
+A 1D array stores values in a single list.
+
+```cpp
+int marks[5];
+```
+
+---
+
+### Two-Dimensional (2D) Array
+
+A 2D array stores values in rows and columns.
+
+```cpp
+int matrix[3][3];
+```
+
+It is mainly used for tables and matrices.
+
+---
+
+# Common Mistakes
+
+* Starting the index from **1** instead of **0**.
+* Accessing an index outside the array size.
+* Writing the wrong loop condition.
+* Declaring the wrong array size.
+
+---
+
+# Important Points
+
+* An array stores multiple values.
+* All values must have the same data type.
+* The first index is always **0**.
+* Arrays are mostly used with loops.
+* Each value in an array is called an **element**.
+
+---
+
+# Summary
+
+An array is a variable that stores multiple values of the same data type. It helps reduce the number of variables and makes programs shorter and easier to understand. Arrays are commonly used with loops to store and process many values.
+
